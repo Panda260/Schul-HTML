@@ -7,6 +7,11 @@
   <title>Hamburg</title>
 </head>
 <body>
+
+<div class="loader">
+  <img src="gif/loading.gif" alt="Loading..." />
+</div>
+
   <div class="container">
 	<h1 id="myID1">Hamburg</h1>
     <div class="main">
@@ -38,5 +43,13 @@
       <p>Email: T.Grothues@olofpalme.de</p>
     </div>
   </div>
+
+<script type="text/javascript">
+  window.addEventListener("load", function () {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden";
+  });
+</script>
+
 </body>
 </html>
